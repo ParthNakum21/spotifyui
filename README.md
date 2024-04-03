@@ -1,1 +1,3 @@
-# This is Spotify UI
+# Spotify UI
+
+Flutter: The Spotify UI Clone

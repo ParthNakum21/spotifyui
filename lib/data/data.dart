@@ -9,17 +9,12 @@ const yourLibrary = [
 
 const playlists = [
   'Today\'s Top Hits',
-  'Discover Weekly',
-  'Release Radar',
+  'Gym Playlist',
   'Chill',
-  'Background',
   'lofi hip hop music - beats to relax/study to',
-  'Vibes Right Now',
-  'Time Capsule',
   'On Repeat',
   'Summer Rewind',
-  'Dank Doggo Tunes',
-  'Sleepy Doge',
+  'Sothing Songs',
 ];
 
 class Song {
@@ -41,16 +36,16 @@ class Song {
 const _lofihiphopMusic = [
   Song(
     id: '0',
-    title: 'Snowman',
-    artist: 'WYS',
-    album: '1 Am. Study Session',
-    duration: '3:15',
+    title: 'Elon Musk and Mark Zukerberg',
+    artist: 'Lex Fridman',
+    album: 'Lex\'s Podcast',
+    duration: '4:30:15',
   ),
   Song(
     id: '1',
-    title: 'Healthy Distraction',
-    artist: 'less.people',
-    album: 'One Day It\'s Over',
+    title: 'Let Her Go',
+    artist: 'Ed Sheeran',
+    album: 'Passenger',
     duration: '2:18',
   ),
   Song(
@@ -69,59 +64,10 @@ const _lofihiphopMusic = [
   ),
   Song(
     id: '4',
-    title: 'Winter Sun',
-    artist: 'Bcalm, Banks',
+    title: 'Husn',
+    artist: 'Anuv Jain',
     album: 'Feelings',
     duration: '2:15',
-  ),
-  Song(
-    id: '5',
-    title: 'Hope',
-    artist: 'No Spirit',
-    album: 'Memories We Made',
-    duration: '1:57',
-  ),
-  Song(
-    id: '6',
-    title: 'A Better Place',
-    artist: 'Project AER, cxit.',
-    album: 'Growth Patterns',
-    duration: '2:00',
-  ),
-  Song(
-    id: '7',
-    title: 'Misty Dawn',
-    artist: 'BluntOne',
-    album: 'Autumn in Budapest',
-    duration: '2:34',
-  ),
-  Song(
-    id: '8',
-    title: 'Hourglass',
-    artist: 'Thaehan',
-    album: 'Hourglass',
-    duration: '1:43',
-  ),
-  Song(
-    id: '9',
-    title: 'After Sunset',
-    artist: 'Project AER, WYS',
-    album: '3 Am. Study Session',
-    duration: '2:41',
-  ),
-  Song(
-    id: '10',
-    title: 'Child',
-    artist: 'Ambulo',
-    album: 'Polar',
-    duration: '2:12',
-  ),
-  Song(
-    id: '11',
-    title: 'Arizona Zero',
-    artist: 'WYS, Sweet Medicine',
-    album: 'Evermore',
-    duration: '2:31',
   ),
 ];
 
@@ -149,12 +95,12 @@ class Playlist {
 
 const lofihiphopPlaylist = Playlist(
   id: '5-playlist',
-  name: 'lofi hip hop music - beats to relax/study to',
+  name: 'Podcast',
   imageURL: 'assets/lofigirl.jpg',
   description:
-      'A daily selection of chill beats - perfect to help you relax & study 📚',
-  creator: 'Lofi Girl',
+      'Coversation about science, technology, history, philosophy, AI, etc',
+  creator: 'Parth N',
   duration: '28 min',
-  followers: '5,351,685',
+  followers: '72000',
   songs: _lofihiphopMusic,
 );

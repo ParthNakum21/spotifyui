@@ -32,11 +32,11 @@ class SideMenu extends StatelessWidget {
             title: 'Search',
             onTap: () {},
           ),
-          _SideMenuIconTab(
-            iconData: Icons.audiotrack,
-            title: 'Radio',
-            onTap: () {},
-          ),
+          // _SideMenuIconTab(
+          //   iconData: Icons.audiotrack,
+          //   title: 'Radio',
+          //   onTap: () {},
+          // ),
           const SizedBox(height: 12.0),
           _LibraryPlaylists(),
         ],
@@ -99,7 +99,7 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Scrollbar(
-        isAlwaysShown: true,
+        // isAlwaysShown: true,
         controller: _scrollController,
         child: ListView(
           controller: _scrollController,
@@ -130,7 +130,7 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                           ),
                           onTap: () {},
                         ))
-                    .toList(),
+                    // .toList(),
               ],
             ),
             const SizedBox(height: 24.0),

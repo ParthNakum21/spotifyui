@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_spotify_ui/data/data.dart';
 
 class PlaylistHeader extends StatelessWidget {
@@ -80,8 +79,8 @@ class _PlaylistButtons extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
-            backgroundColor: Theme.of(context).accentColor,
-            primary: Theme.of(context).iconTheme.color,
+            backgroundColor: Theme.of(context).colorScheme.secondary,
+            // primary: Theme.of(context).iconTheme.color,
             textStyle: Theme.of(context)
                 .textTheme
                 .caption!

@@ -74,7 +74,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
         actions: [
           TextButton.icon(
             style: TextButton.styleFrom(
-              primary: Theme.of(context).iconTheme.color,
+              // primary: Theme.of(context).iconTheme.color,
             ),
             onPressed: () {},
             icon: const Icon(
@@ -106,7 +106,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
           ),
         ),
         child: Scrollbar(
-          isAlwaysShown: true,
+          // isAlwaysShown: true,
           controller: _scrollController,
           child: ListView(
             controller: _scrollController,

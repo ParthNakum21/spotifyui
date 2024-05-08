@@ -81,7 +81,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
               Icons.account_circle_outlined,
               size: 30.0,
             ),
-            label: const Text('Marcus Ng'),
+            label: const Text('Parth N'),
           ),
           const SizedBox(width: 8.0),
           IconButton(

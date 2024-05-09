@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_spotify_ui/data/data.dart';
 import 'package:flutter_spotify_ui/widgets/widgets.dart';
 
@@ -35,40 +34,13 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color.fromARGB(0, 243, 236, 236),
         elevation: 0,
         leadingWidth: 140.0,
         leading: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
-                customBorder: const CircleBorder(),
-                onTap: () {},
-                child: Container(
-                  padding: const EdgeInsets.all(6.0),
-                  decoration: const BoxDecoration(
-                    color: Colors.black26,
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(Icons.chevron_left, size: 28.0),
-                ),
-              ),
-              const SizedBox(width: 16.0),
-              InkWell(
-                customBorder: const CircleBorder(),
-                onTap: () {},
-                child: Container(
-                  padding: const EdgeInsets.all(6.0),
-                  decoration: const BoxDecoration(
-                    color: Colors.black26,
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(Icons.chevron_right, size: 28.0),
-                ),
-              ),
-            ],
           ),
         ),
         actions: [
@@ -84,27 +56,10 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
             label: const Text('Parth N'),
           ),
           const SizedBox(width: 8.0),
-          IconButton(
-            padding: const EdgeInsets.only(),
-            icon: const Icon(Icons.keyboard_arrow_down, size: 30.0),
-            onPressed: () {},
-          ),
-          const SizedBox(width: 20.0),
         ],
       ),
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              const Color(0xFFAF1018),
-              Theme.of(context).backgroundColor,
-            ],
-            stops: const [0, 0.3],
-          ),
-        ),
         child: Scrollbar(
           // isAlwaysShown: true,
           controller: _scrollController,

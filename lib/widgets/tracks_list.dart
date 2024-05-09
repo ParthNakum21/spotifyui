@@ -16,7 +16,7 @@ class TracksList extends StatelessWidget {
     return DataTable(
       headingTextStyle:
           Theme.of(context).textTheme.overline!.copyWith(fontSize: 12.0),
-      dataRowHeight: 54.0,
+      // dataRowHeight: 54.0,
       showCheckboxColumn: false,
       columns: const [
         DataColumn(label: Text('TITLE')),

@@ -152,7 +152,7 @@ class _MoreControls extends StatelessWidget {
               height: 5.0,
               width: 70.0,
               decoration: BoxDecoration(
-                color: Colors.grey[800],
+                color: Color.fromARGB(255, 128, 125, 125),
                 borderRadius: BorderRadius.circular(2.5),
               ),
             ),

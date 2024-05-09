@@ -12,7 +12,7 @@ const playlists = [
   'Gym Playlist',
   'Chill',
   'lofi hip hop music - beats to relax/study to',
-  'On Repeat',
+  'podcasts',
   'Summer Rewind',
   'Sothing Songs',
 ];
@@ -71,6 +71,45 @@ const _lofihiphopMusic = [
   ),
 ];
 
+
+const _podcasts = [
+  Song(
+    id: '0',
+    title: 'Elon Musk and Mark Zukerberg',
+    artist: 'Lex Fridman',
+    album: 'Lex\'s Podcast',
+    duration: '4:30:15',
+  ),
+  Song(
+    id: '1',
+    title: 'Sam Altman and Lex Fridman',
+    artist: 'Lex Fridman',
+    album: 'Lex\'s Podcast',
+    duration: '2:30:18',
+  ),
+  Song(
+    id: '2',
+    title: 'Naval Ravikant and Joe Rogan',
+    artist: 'Joe Rogan',
+    album: 'Joe Rogan Podcast',
+    duration: '2:04:39',
+  ),
+  Song(
+    id: '3',
+    title: 'Naval Ravikant and Joe Rogan',
+    artist: 'Joe Rogan',
+    album: 'Joe Rogan Podcast',
+    duration: '2:20:35',
+  ),
+  Song(
+    id: '4',
+    title: 'Character Building',
+    artist: 'Nikhil Kamath',
+    album: 'WTF',
+    duration: '2:30:15',
+  ),
+];
+
 class Playlist {
   final String id;
   final String name;
@@ -103,4 +142,16 @@ const lofihiphopPlaylist = Playlist(
   duration: '28 min',
   followers: '72000',
   songs: _lofihiphopMusic,
+);
+
+const podcasts = Playlist(
+  id: '4-playlist',
+  name: 'Podcast',
+  imageURL: 'assets/lofigirl.jpg',
+  description:
+      'Coversation about science, technology, history, philosophy, AI, etc',
+  creator: 'Parth N',
+  duration: '',
+  followers: '20000',
+  songs: _podcasts,
 );

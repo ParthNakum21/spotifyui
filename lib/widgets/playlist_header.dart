@@ -28,10 +28,10 @@ class PlaylistHeader extends StatelessWidget {
                 children: [
                   Text(
                     'PLAYLIST',
-                    style: Theme.of(context)
-                        .textTheme
-                        .overline!
-                        .copyWith(fontSize: 12.0),
+                    // style: Theme.of(context)
+                    //     .textTheme
+                    //     .overline!
+                    //     .copyWith(fontSize: 12.0),
                   ),
                   const SizedBox(height: 12.0),
                   Text(playlist.name,
@@ -52,7 +52,7 @@ class PlaylistHeader extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 20.0),
-        _PlaylistButtons(followers: playlist.followers),
+        // _PlaylistButtons(followers: playlist.followers),
       ],
     );
   }

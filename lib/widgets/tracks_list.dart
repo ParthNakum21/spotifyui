@@ -25,29 +25,22 @@ class TracksList extends StatelessWidget {
         DataColumn(label: Icon(Icons.access_time)),
       ],
       rows: tracks.map((e) {
-        final selected =
-            context.watch<CurrentTrackModel>().selected?.id == e.id;
-        final textStyle = TextStyle(
-          color: selected
-              ? Theme.of(context).colorScheme.secondary
-              : Theme.of(context).iconTheme.color,
-        );
         return DataRow(
           cells: [
             DataCell(
-              Text(e.title, style: textStyle),
+              Text(e.title),
             ),
             DataCell(
-              Text(e.artist, style: textStyle),
+              Text(e.artist),
             ),
             DataCell(
-              Text(e.album, style: textStyle),
+              Text(e.album),
             ),
             DataCell(
-              Text(e.duration, style: textStyle),
+              Text(e.duration),
             ),
           ],
-          selected: selected,
+          //select song to play
           onSelectChanged: (_) =>
               context.read<CurrentTrackModel>().selectTrack(e),
         );

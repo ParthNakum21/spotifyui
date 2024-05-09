@@ -7,7 +7,7 @@ class SideMenu extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: 280.0,
-      color: Theme.of(context).primaryColor,
+      color: Theme.of(context).secondaryHeaderColor,
       child: Column(
         children: [
           Row(
@@ -32,11 +32,6 @@ class SideMenu extends StatelessWidget {
             title: 'Search',
             onTap: () {},
           ),
-          // _SideMenuIconTab(
-          //   iconData: Icons.audiotrack,
-          //   title: 'Radio',
-          //   onTap: () {},
-          // ),
           const SizedBox(height: 12.0),
           _LibraryPlaylists(),
         ],
@@ -67,8 +62,7 @@ class _SideMenuIconTab extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: Theme.of(context).textTheme.bodyText1,
-        overflow: TextOverflow.ellipsis,
+        // style: Theme.of(context).textTheme.bodyText1,
       ),
       onTap: onTap,
     );
@@ -81,30 +75,11 @@ class _LibraryPlaylists extends StatefulWidget {
 }
 
 class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
-  ScrollController? _scrollController;
-
-  @override
-  void initState() {
-    super.initState();
-    _scrollController = ScrollController();
-  }
-
-  @override
-  void dispose() {
-    _scrollController?.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scrollbar(
-        // isAlwaysShown: true,
-        controller: _scrollController,
         child: ListView(
-          controller: _scrollController,
-          padding: const EdgeInsets.symmetric(vertical: 12.0),
-          physics: const ClampingScrollPhysics(),
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,7 +92,6 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                   child: Text(
                     'YOUR LIBRARY',
                     style: Theme.of(context).textTheme.headline4,
-                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
                 ...yourLibrary
@@ -125,8 +99,6 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                           dense: true,
                           title: Text(
                             e,
-                            style: Theme.of(context).textTheme.bodyText2,
-                            overflow: TextOverflow.ellipsis,
                           ),
                           onTap: () {},
                         ))
@@ -145,7 +117,6 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                   child: Text(
                     'PLAYLISTS',
                     style: Theme.of(context).textTheme.headline4,
-                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
                 ...playlists
@@ -158,7 +129,7 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                           ),
                           onTap: () {},
                         ))
-                    .toList(),
+                    // .toList(),
               ],
             )
           ],

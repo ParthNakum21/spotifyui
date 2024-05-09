@@ -43,7 +43,7 @@ class PlaylistHeader extends StatelessWidget {
                   ),
                   const SizedBox(height: 16.0),
                   Text(
-                    'Created by ${playlist.creator} • ${playlist.songs.length} songs, ${playlist.duration}',
+                    'Created by ${playlist.creator}',
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
                 ],

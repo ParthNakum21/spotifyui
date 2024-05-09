@@ -1,6 +1,4 @@
-const yourLibrary = [
-  'Made For You',
-  'Recently Played',
+const yourLibrary = [ 
   'Liked Songs',
   'Albums',
   'Artists',
@@ -9,11 +7,8 @@ const yourLibrary = [
 
 const playlists = [
   'Today\'s Top Hits',
-  'Gym Playlist',
-  'Chill',
   'lofi hip hop music - beats to relax/study to',
   'podcasts',
-  'Summer Rewind',
   'Sothing Songs',
 ];
 
@@ -36,10 +31,10 @@ class Song {
 const _lofihiphopMusic = [
   Song(
     id: '0',
-    title: 'Elon Musk and Mark Zukerberg',
-    artist: 'Lex Fridman',
-    album: 'Lex\'s Podcast',
-    duration: '4:30:15',
+    title: 'Skyfall',
+    artist: 'Adele',
+    album: 'Adele',
+    duration: '3:30',
   ),
   Song(
     id: '1',

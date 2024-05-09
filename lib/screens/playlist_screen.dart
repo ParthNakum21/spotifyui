@@ -34,7 +34,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(0, 243, 236, 236),
+        backgroundColor: Color.fromARGB(0, 26, 24, 24),
         elevation: 0,
         leadingWidth: 140.0,
         leading: Padding(
@@ -45,9 +45,6 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
         ),
         actions: [
           TextButton.icon(
-            style: TextButton.styleFrom(
-              // primary: Theme.of(context).iconTheme.color,
-            ),
             onPressed: () {},
             icon: const Icon(
               Icons.account_circle_outlined,

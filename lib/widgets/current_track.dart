@@ -45,7 +45,10 @@ class _TrackInfo extends StatelessWidget {
           children: [
             Text(
               selected.title,
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context)
+                  .textTheme
+                  .subtitle1!
+                  .copyWith(color: Colors.grey[300], fontSize: 16.0),
             ),
             const SizedBox(height: 4.0),
             Text(
@@ -60,6 +63,7 @@ class _TrackInfo extends StatelessWidget {
         const SizedBox(width: 12.0),
         IconButton(
           icon: const Icon(Icons.favorite_border),
+          color: Colors.green,
           onPressed: () {},
         ),
       ],
@@ -70,7 +74,6 @@ class _TrackInfo extends StatelessWidget {
 class _PlayerControls extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final selected = context.watch<CurrentTrackModel>().selected;
     return Column(
       children: [
         Row(
@@ -110,7 +113,6 @@ class _PlayerControls extends StatelessWidget {
         const SizedBox(height: 4.0),
         Row(
           children: [
-            Text('0:00', style: Theme.of(context).textTheme.caption),
             const SizedBox(width: 8.0),
             Container(
               height: 5.0,
@@ -121,10 +123,7 @@ class _PlayerControls extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8.0),
-            Text(
-              selected?.duration ?? '0:00',
-              style: Theme.of(context).textTheme.caption,
-            ),
+            
           ],
         ),
       ],
